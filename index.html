@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="0; url=https://vaulto.ai">
+    <link rel="canonical" href="https://vaulto.ai">
     <title>Redirecting to Vaulto.ai</title>
     <script>
-        window.location.replace("https://vaulto.ai");
+        // Immediate redirect for mobile browsers
+        (function() {
+            window.location.replace("https://vaulto.ai");
+        })();
     </script>
 </head>
 <body>
+    <noscript>
+        <meta http-equiv="refresh" content="0; url=https://vaulto.ai">
+    </noscript>
     <p>Redirecting to <a href="https://vaulto.ai">vaulto.ai</a>...</p>
+    <script>
+        // Fallback redirect
+        setTimeout(function() {
+            window.location.href = "https://vaulto.ai";
+        }, 100);
+    </script>
 </body>
 </html>
 
